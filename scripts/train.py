@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import tensorflow as tf
 from config import configs
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.model_selection import train_test_split
@@ -79,6 +80,9 @@ history = model.fit(
 
 # save the model
 model.save("../models/mnist_classifier.h5")
+
+# storing in tf-serving format as well
+tf.saved_model.save(model, export_dir="../saved_model")
 
 # plot training history
 plot_history(history)
