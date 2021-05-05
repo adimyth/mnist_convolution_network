@@ -6,6 +6,9 @@ Production ready model serving
 * Highly scalable model serving solution
 * Works well for models upto 2GB (sufficient for most cases)
 
+# Digit Recognizer
+![digit-recognizer](resources/digit_recognizer_demo.gif)
+
 ## Why Flask is Ineffecient
 * No consistent APIs
 * No consistent payloads
