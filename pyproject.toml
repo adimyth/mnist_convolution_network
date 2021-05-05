@@ -19,6 +19,7 @@ sklearn = "^0.0"
 streamlit = "^0.81.0"
 streamlit-drawable-canvas = "^0.6.0"
 opencv-python = "^4.5.1"
+watchdog = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 
